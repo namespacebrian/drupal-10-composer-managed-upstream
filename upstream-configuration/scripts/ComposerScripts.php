@@ -17,6 +17,19 @@ use Webmozart\PathUtil\Path;
 class ComposerScripts {
 
   /**
+   * postUpdate
+   *
+   * After "composer update" runs, we have the opportunity to do additional
+   * fixups to the project files.
+   *
+   * @param Composer\Script\Event $event
+   *   The Event object passed in from Composer
+   */
+  public static function postUpdate(Event $event) {
+    // For future use
+  }
+
+  /**
    * Add a dependency to the upstream-configuration section of a custom upstream.
    *
    * The upstream-configuration/composer.json is a place to put modules, themes
